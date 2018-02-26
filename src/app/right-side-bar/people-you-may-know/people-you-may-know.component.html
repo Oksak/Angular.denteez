@@ -1,0 +1,19 @@
+<div class="col-md-12 wrapper">
+  <span class="people-you-may-know">People you may know</span>
+  <span class="pull-right see-all">See All</span>
+  <div class="col-md-12 wrapper-people-information">
+    <div class="row" *ngFor ="let people of peoples">
+      <p>{{ people.name }}</p>
+      <div class="col-md-5 photo-people">
+        <img [src]="people.photo" alt="photo-people">
+      </div>
+      <div class="col-md-7 people-information">
+        <ul>
+          <li>{{ people.profession }}</li>
+          <li>{{ people.city }},{{ people.country }}</li>
+          <li>Add Friend</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

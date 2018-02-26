@@ -1,0 +1,20 @@
+<div class="col-md-6 ">
+  <div class="row">
+    <div class="col-md-8 service-directory">
+      <h2>Service Directory</h2>
+    </div>
+    <div class="col-md-4 add-new-service">
+      <a href="#" class="button7">Add New Service</a>
+    </div>
+    <div class="col-md-12 wrapper">
+        <div class="row">
+          <div class="col-md-4 add-service-directory" *ngFor="let service of services">
+            <img [src]="service.icon" alt="Accountancy">
+            <p>{{ service.name }}</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div class="row">
+    <div class="col-lg-12 wrapper-featured-companies">
+      <span class="featured-companies">Featured Companies</span>
+      <span class="see-all">See All</span>
+    </div>
+  </div>
+  <div class="row" *ngFor="let company of companies">
+    <div class="col-md-5 icon-company">
+      <img [src]="company.photo" alt="icon-company">
+    </div>
+    <div class="col-md-7">
+      <ul>
+        <li>{{ company.name }}</li>
+        <li>{{ company.spec }}</li>
+        <li>{{ company.city }},{{ company.country }}</li>
+        <li>Follow Now</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 feature-links">
+      <p><span>Denteez Copyright 2015</span></p>
+      <span class="pull-left">Terms of use</span>
+      <span class="pull-right privacy-policy ">Privacy Policy</span>
+    </div>
+  </div>
+</div>
+

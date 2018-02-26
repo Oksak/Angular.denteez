@@ -1,0 +1,18 @@
+<div class="col-md-12 wrapper">
+  <span class="featured-products">Featured Products</span>
+  <span class="pull-right see-all">See All</span>
+  <div class="col-md-12 wrapper-featured-products">
+    <div class="row" *ngFor="let product of products">
+      <p>{{ product.name }}</p>
+      <div class="col-md-5 icon-featured-products">
+        <img [src]="product.icon" alt="photo-people">
+      </div>
+      <div class="col-md-7 product-information">
+        <ul>
+          <li>{{ product.descriptions }}</li>
+          <li>{{ product.information }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
